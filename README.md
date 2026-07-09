@@ -13,7 +13,7 @@ Este proyecto demuestra un flujo de trabajo completo de análisis de datos, come
 
 ## ⚙️ Arquitectura del Pipeline (ETL)
 1. **Extracción (Extract):** Lectura de registros transaccionales desde un archivo Excel (`Ventas_Crudas.xlsx`).
-2. **Transformación (Transform):** * Remoción de valores nulos y registros duplicados.
+2. **Transformación (Transform):** Remoción de valores nulos y registros duplicados.
    * Estandarización de columnas de texto (formato *snake_case*) y normalización de fechas/horas.
    * Ingeniería de características (Feature Engineering): Cálculo de la métrica de *Ganancia Neta* en el backend.
 3. **Carga (Load):** Inserción de los datos limpios en una tabla relacional de SQLite (`ventas.db`) para su posterior conexión con Power BI.
@@ -24,13 +24,13 @@ El dashboard diseñado permite explorar las tendencias de ventas, analizar las g
 ![Vista previa del Dashboard](dashboard/dashboard_preview.png)
 
 ## 📂 Estructura del Repositorio
-- `/notebooks`: Contiene el archivo `limpieza_y_analisis.ipynb` con la documentación paso a paso del análisis exploratorio (EDA) y la limpieza.
+- `/notebooks`: Contiene el archivo `Limpieza_y_analisis.ipynb` con la documentación paso a paso del análisis exploratorio (EDA) y la limpieza.
 - `/src`: Scripts de automatización en Python (`procesar_ventas.py` y `Discrepancies.py`).
 - `/data`: Archivos de datos originales y procesados.
 - `/database`: Archivo local de SQLite (`ventas.db`).
-- `Dashboard_Ventas.pbix`: Archivo fuente de Power BI.
+- `/dashboard`: Archivo fuente de Power BI (`Dashboard.pbix`) e imagen del preview del dashboard (`dashboard_preview.png`).
 
 ## 🚀 Cómo ejecutar el código localmente
-1. Clona este repositorio: `git clone https://github.com/TU_USUARIO/TU_REPOSITORIO.git`
+1. Clona este repositorio: `git clone https://github.com/Sharkem045/etl-ventas-powerbi.git`
 2. Instala las dependencias necesarias: `pip install pandas numpy sqlalchemy openpyxl`
 3. Ejecuta el script principal de ETL: `python src/procesar_ventas.py`
