@@ -21,7 +21,7 @@ Este proyecto demuestra un flujo de trabajo completo de análisis de datos, come
 ## 📈 Dashboard y Resultados Visuales
 El dashboard diseñado permite explorar las tendencias de ventas, analizar las ganancias por categoría de producto y evaluar el rendimiento general del negocio.
 
-![Vista previa del Dashboard](dashboard/dashboard_preview.pdf)
+![Vista previa del Dashboard](dashboard/dashboard_preview.png)
 
 ## 📂 Estructura del Repositorio
 - `/notebooks`: Contiene el archivo `limpieza_y_analisis.ipynb` con la documentación paso a paso del análisis exploratorio (EDA) y la limpieza.
