@@ -1,0 +1,7 @@
+.env/
+venv/
+env/
+.vscode/
+.ipynb_checkpoints/
+~$*.xlsx
+__pycache__/
